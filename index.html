@@ -12,6 +12,9 @@
 
   <title>Voting system</title>
   <style>
+    .navbar{
+      background-color: 	rgb(33,47,58);
+}
     body{
       background-color: #f1f2f2;
     }
@@ -32,6 +35,47 @@
     .what{
       background-color: #fafafa;
     }
+
+    /*button wala section*/
+
+    
+.liad{                  /*   to make are u candidate center*/
+  padding-left: 150px;
+}
+.liad:hover{
+  color: rgb(192, 0, 0);
+  font-weight: bold;
+
+}
+.align{                 /*   to place both the buttons one after the other*/
+  display: flex;
+}
+.bttn{
+  
+      padding: 12px 24px;
+      background-image: linear-gradient(	rgb(87, 1, 1),  rgb(173, 17, 17),rgb(189, 108, 108));
+      color: #fff; 
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    /* Hover effect for the button */
+    .bttn:hover {
+        background-image: linear-gradient(	rgb(187, 1, 1),  rgb(170, 41, 41),rgb(223, 124, 124));
+      border-radius: 8px;
+      color: #000000; 
+      font-weight: bolder;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+    }
+
+
+
+    /*  chunav ke intro wala section*/
+
+
+
     .image{                      /*lugu design*/
       height: 70px;
       border-radius: 150px;
@@ -41,17 +85,20 @@
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
 
     }
+
+    /* cards wala section*/
+
     .clas{
       margin-left: 50px; /*used in why should u choose us line*/
     }
     .clas:hover{
       color:red;
     }
-    .color:hover{               /*to change the color of subheadings in 3rd section*/
+    .color:hover{               /*to change the color of subheadings in 4th section*/
           color:coral;  
           text-decoration: underline;   
     }
-    .display{            /* used in section 3 to avoid overlapping of cards*/
+    .display{            /* used in section 34to avoid overlapping of cards*/
       margin-bottom: 20px;
     }
     .display:hover{
@@ -59,16 +106,18 @@
       padding-left: 30px;
 padding-top: 40px;
     }
-    .lugu{                 /* used in section 3 to adjust logo og cards*/
+    .lugu{                 /* used in section 4 to adjust logo og cards*/
       margin-left: -300px;
      
     }
-    .shadow{                 /*used to add shodow in 3rd section*/
+    .shadow{                 /*used to add shodow in 4rd section*/
       box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
       background-color: #fafafa;
-
     }
-    li:hover{   /*  used in 4th section i.e list items to make its font bold */
+
+    /* card ke niche wala section*/
+
+    li:hover{   /*  used in 5th section i.e list items to make its font bold */
           background-color: #f7f4f4;
           font-weight: bolder;
     }
@@ -78,11 +127,11 @@ padding-top: 40px;
 
       bottom: 0;
       padding: 2.5rem 0;
-      color: #000000;
+      color: #ffffff;
       text-align: center;
       width: 100%;
       height: 120px;
-      background-color: #c6c6c6;
+      background-color: 	rgb(33,47,58);
     }
     .space {
 
@@ -95,50 +144,50 @@ padding-top: 40px;
 </head>
 
 <body>
-  <div class="baar">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-danger ">
-    <a class="navbar-brand" href="#"><b>Chunav</b></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  
+  <nav class="navbar navbar-expand-lg navbar-dark ">
+        <a class="navbar-brand" href="#"><b>Chunav</b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/admin.html">Admin Login</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/candidate.html">Candidate Login</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/voter.html">Voter Login</a>
-        </li>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="/admin.html">Admin Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/candidate.html">Candidate Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/voter.html">Voter Login</a>
+                </li>
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            More
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Guidelines</a>
-            <a class="dropdown-item" href="#">About us</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">F&Q</a>
-          </div>
-        </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        More
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Guidelines</a>
+                        <a class="dropdown-item" href="#">About us</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">F&Q</a>
+                    </div>
+                </li>
 
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
-  </nav>
-</div>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
   <div class="front">
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -181,6 +230,28 @@ padding-top: 40px;
       </a>
     </div>
   </div>
+<br>
+<br>
+
+<div class="align">
+  <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4 liad">Are you a candidate? Click on the Login button below</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <a class="link" href="/candidate.html"><button type="button" class="btn btn-primary btn-lg px-4 gap-3 bttn">Login Here</button></a>
+        
+      </div>
+    </div>
+<div class="col-lg-6 mx-auto">
+      <p class="lead mb-4 liad">Are you a Voter? Click on the Login button below</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <a class="link" href="/Voter.html"><button type="button" class="btn btn-primary btn-lg px-4 gap-3 bttn">Login Here</button></a>
+      </div>
+    </div>
+    </div>
+
+
+
+
   <div class="px-4 py-5 my-5 text-center what ">
     <img class="d-block mx-auto mb-4 image " src="lugu.png" alt="" width="72" height="57">
     <h1 class="display-5 fw-bold text-body-emphasis">What is Chunav?</h1>
@@ -194,7 +265,7 @@ padding-top: 40px;
 
   <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5 shadow">
     <div class="col d-flex flex-column align-items-start gap-2">
-      <h2 class="fw-bold text-body-emphasis clas ">Our Features</h2>
+      <h2 class="fw-bold text-body-emphasis clas ">Why you should choose us?</h2>
     </div>
     <div class="col">
       <div class="row row-cols-1 row-cols-sm-2 g-4">
@@ -263,7 +334,8 @@ padding-top: 40px;
   <footer class="blog-footer">
     <span class="space">Theme</span> <span class="space">Privacy Policy</span> <span class="space">Terms and
       Condition</span><span class="space">Content copyright</span>
-    <div class="top"> <span>Made in TCET</span></div>
+    <div class="top"> <span>Made with ❤	
+      in TCET</span></div>
   </footer>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
